@@ -10,10 +10,6 @@ connectDB();
 // init Middleware
 app.use(express.json({ extended: false }));
 
-const PORT = process.env.PORT || 8000;
-
-app.listen(PORT, () => console.log(`Server Started on Port ${PORT}`));
-
 // Define Routes
 app.use("/api/users", require("./routes/User"));
 app.use("/api/auth", require("./routes/Auth"));
@@ -28,3 +24,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
   );
 }
+
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => console.log(`Server Started on Port ${PORT}`));
