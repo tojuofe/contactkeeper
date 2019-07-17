@@ -21,11 +21,11 @@ const Navbar = ({ icon, title }) => {
     <Fragment>
       <li>Hello {user && user.name}</li>
       <li>
-        <Link onClick={onLogout} to="/#">
+        <a onClick={onLogout} href="#!">
           {" "}
           <i className="fas fa-sign-out-alt" />{" "}
           <span className="hide-sm">Logout</span>
-        </Link>
+        </a>
       </li>
       {/* <li>
         <Link to="/about">About</Link>
