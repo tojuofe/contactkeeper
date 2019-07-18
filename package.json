@@ -1,12 +1,11 @@
 {
   "name": "contactkeeper",
   "version": "1.0.0",
-  "description": "None yet",
+  "description": "Contact manager app",
   "main": "server.js",
   "scripts": {
-    "starts": "node server.js",
-    "server": "nodemon server.js",
     "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clientinstall": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
