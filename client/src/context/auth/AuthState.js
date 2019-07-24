@@ -94,17 +94,10 @@ const AuthState = props => {
   };
 
   // Logout
-  const logout = () => {
-    dispatch({
-      type: LOGOUT
-    });
-  };
-
+  const logout = () => dispatch({ type: LOGOUT });
+  
   // Clear Errors
-  const clearErrors = () =>
-    dispatch({
-      type: CLEAR_ERRORS
-    });
+  const clearErrors = () => dispatch({ type: CLEAR_ERRORS });
 
   return (
     <AuthContext.Provider
